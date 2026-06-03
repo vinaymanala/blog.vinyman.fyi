@@ -31,7 +31,7 @@ Three components make up the SAML system work:
 
 Here is the flow:
 
-![SAML Authentication flow](./SAML.png) by mircrosoft
+![SAML Authentication flow](/src/assets/images/SAML.png) by mircrosoft
 
 The Authentication Flow:
 
@@ -50,7 +50,7 @@ Now OAuth 2.0 is primarily used for Authorization like "What are you allowed to 
 
 ## OIDC
 
-![OIDC Authentication Flow](./OIDC.png) by mircrosoft
+![OIDC Authentication Flow](/src/assets/images/OIDC.png) by mircrosoft
 
 OIDC (Open ID Connect) is an additional layer on top of OAuth2.0 to add authentication. With OIDC the identity is handled by the OIDC and the access delegation is handled by the OAuth2.0. This is the modern standard for many companies and many providers like Okta provides these with MFA and other features out of the box.
 
@@ -69,7 +69,7 @@ Now you can build your own from scratch or use battle tested libraries which wil
 
 ## Duende BFF
 
-![Duende Bff](./Duendebff.png) by Duende
+![Duende Bff](/src/assets/images/DuendeBff.png) by Duende
 
 > Duende.BFF is a library for building services that comply with the BFF pattern and solve security and identity problems in browser-based applications such as SPAs and Blazor-based applications. It is used to create a backend host that is paired with a frontend application. This backend is called the Backend For Frontend (BFF) host, and is responsible for all the OAuth and OIDC protocol interactions. It completely implements the latest recommendations from the IETF regarding security for browser-based applications.
 
