@@ -1,0 +1,158 @@
+/* TEMP THEME: Hybrid Zen Ocean Dark
+   - To enable: add `@import "./temp-theme.css";` at the top of `src/styles/global.css`
+   - To undo: remove that import line.
+*/
+
+:root {
+  --width: 720px;
+  --font-main: "Verdana", sans-serif;
+  --font-secondary: "Verdana", sans-serif;
+  --font-scale: 1em;
+
+  --background-color: #010518;
+  --text-color: #eae6df;
+  --heading-color: #f0eee9;
+  --link-color: #15e3dd;
+  --visited-color: #8b6fcb;
+  --muted-color: #8c8c84;
+  --border-color: #073341;
+  --code-background-color: #020310;
+  --code-color: #eae6df;
+  --blockquote-color: #cccccc;
+  --accent: var(--link-color);
+}
+
+/* Layout overrides for previewing the theme */
+body {
+  font-family: var(--font-secondary);
+  font-size: var(--font-scale);
+  margin: auto;
+  padding: 20px;
+  max-width: var(--width);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.5;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-main);
+  color: var(--heading-color);
+}
+
+a {
+  /* color: var(--link-color); */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+color: var(--link-color);
+  text-decoration: underline;
+}
+
+strong, b {
+  color: var(--heading-color);
+}
+
+time {
+  font-family: monospace;
+  font-style: normal;
+  font-size: 15px;
+  color: var(--muted-color);
+}
+
+main {
+  line-height: 1.6;
+}
+
+hr {
+  border: 0;
+  border-top: 1px dashed var(--border-color);
+}
+
+img {
+  max-width: 100%;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  margin: 1.5em 0;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.02);
+}
+
+code {
+  font-family: monospace;
+  padding: 2px 4px;
+  background-color: var(--code-background-color);
+  color: var(--code-color);
+  border-radius: 3px;
+}
+
+.highlight, .code {
+  padding: 1px 15px;
+  background-color: var(--code-background-color);
+  color: var(--code-color);
+  border-radius: 3px;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  overflow-x: auto;
+}
+
+blockquote {
+  border-left: 3px solid var(--link-color);
+  padding-left: 16px;
+  color: var(--blockquote-color);
+  font-style: italic;
+  margin: 1.5em 0;
+}
+
+footer {
+  padding: 25px 0;
+  text-align: center;
+  color: var(--muted-color);
+}
+
+.title h1 {
+  font-size: 1.5em;
+}
+
+.inline {
+  width: auto !important;
+}
+
+ul.blog-posts {
+  list-style-type: none;
+  padding: unset;
+}
+
+ul.blog-posts li {
+  display: flex;
+}
+
+ul.blog-posts li span {
+  flex: 0 0 130px;
+}
+
+ul.blog-posts li a:visited {
+  color: var(--visited-color);
+}
+
+/* Tag list styles */
+.tag-list a {
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border-color);
+  text-decoration: none;
+  color: inherit;
+}
+
+.tag-list a:hover {
+  background: var(--accent);
+  color: white;
+}

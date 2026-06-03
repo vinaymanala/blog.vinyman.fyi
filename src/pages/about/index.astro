@@ -1,0 +1,61 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/Container.astro";
+import { ABOUT } from "@consts";
+import Link from "@components/Link.astro";
+---
+
+<Layout title={ABOUT.TITLE} description={ABOUT.DESCRIPTION}>
+  <Container>
+    <aside data-pagefind-ignore>
+      <h1 class="font-semibold text-black dark:text-white">About Me</h1>
+      <div class="space-y-16">
+        <section>
+          <article class="space-y-4">
+            <span class="animate">
+              <p>
+                Hi I'm Vinay Manala. 27 years old software developer based in
+                India.
+              </p>
+              <p>
+                Immersed in software designing - tinkering with heavy web tech,
+                learning about systems.
+              </p>
+              <p>After years building for web, it feels native to me.</p>
+              <p>
+                I'm looking for new opportunities. If you think I can be a good
+                fit for your team, feel free to reach out to me via
+                <Link
+                  href="mailto:vinaymworks@gmail.com"
+                  aria-label="Email Vinay Manala"
+                  external
+                >
+                  Email
+                </Link>
+                or
+                <Link
+                  href="https://www.linkedin.com/in/vinaymanala/"
+                  external
+                  aria-label="LinkedIn"
+                >
+                  LinkedIn
+                </Link>
+              </p>
+              <p>
+                View my work on
+                <Link
+                  href="https://github.com/vinaymanala"
+                  external
+                  aria-label="GitHub"
+                >
+                  GitHub
+                </Link>
+                to see what I've been up to.
+              </p>
+            </span>
+          </article>
+        </section>
+      </div>
+    </aside>
+  </Container>
+</Layout>
