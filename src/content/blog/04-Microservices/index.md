@@ -1,6 +1,6 @@
 ---
-title: "Microservices"
-description: "A discussion on the benefits and challenges of using microservices architecture."
+title: "Clean Architecture: Principles, Layers and Challenges"
+description: "A comprehensive guide to Clean Architecture, covering its key principles, layers, and the challenges developers may face when implementing it in their projects."
 date: "2026-05-25"
 draft: false
 tags:
