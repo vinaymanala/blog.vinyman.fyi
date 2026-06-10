@@ -10,22 +10,22 @@ tags:
   - software-architecture
 ---
 
-### Problem Statement:
+## Problem Statement:
 
-#### Why Visual Studio forces multi-instance workflow?
+### Why Visual Studio forces multi-instance workflow?
 
 Visual studio allows you to run a single project in an instance, which has its benefits with fast & better debugging, better IntelliSense, less configuration etc., but then forces you to run multiple projects in their own instances of visual studio which attaches to fragmented debugging across workspaces.
 
 > Note: You can only work on a single project at a time like in Visual Studio. Although you can run and debug multiple projects.
 
-### Goal:
+## Goal:
 
 Visual Studio Code (VS Code) shines here where you can customize and configure your projects however you want, giving the developer more control of the projects. In this post, we will look at a one-time configuration of how you can run multiple projects in a single workspace in VS Code which gives you many benefits like centralized debugging, single workspace with a lightweight IDE.
 
 > "This is an experimental/workaround and may not replace the standard Visual Studio workflow in all scenarios."
 > The setup guide shows you how can debug Service Fabric projects in VS Code and can be applied to other types of projects.
 
-### Set up Guide:
+## Set up Guide:
 
 #### Prerequisites:
 
@@ -194,7 +194,7 @@ For some use cases, you may want to manually run the Service Fabric commands. Yo
 
 This post specifically focuses on running Service Fabric Projects in VS Code, but similar intend can be used to run and debug other types of projects as well.
 
-### References:
+## References:
 
 1. .NET Download - <https://dotnet.microsoft.com/en-us/download/dotnet>
 2. Service Fabric Repository - <https://github.com/microsoft/service-fabric>
